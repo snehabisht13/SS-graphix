@@ -7,12 +7,13 @@ class EnquiryMailer < ApplicationMailer
     @contact = params[:contact]
     @service = params[:service]
     @requirement = params[:requirement]
-
+    @date = Time.current.strftime("%d %B %Y, %I:%M %p")
+    
     mail(
       to: ENV.fetch("BREVO_SENDER_EMAIL"),
-      from: ENV.fetch("BREVO_SENDER_EMAIL"),
+      from: ENV.fetch("ENQUIRY_EMAIL"),
       reply_to: @email,
-      subject: "New Enquiry from #{@name}"
+      subject: "New Enquiry from #{@name} - #{@service} - #{@date}"
     )
 
   end
