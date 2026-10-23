@@ -3,9 +3,9 @@ class EnquiriesController < ApplicationController
 
     enquiry = enquiry_params
 
-    EnquiryMailer.new_enquiry(enquiry).deliver_later
+    EnquiryMailer.new_enquiry(enquiry).deliver_now
 
-    EnquiryMailer.enquiry_confirmation(enquiry).deliver_later
+    EnquiryMailer.enquiry_confirmation(enquiry).deliver_now
 
     redirect_to root_path,
                 notice: "Your enquiry has been submitted successfully. Check your email for confirmation."
