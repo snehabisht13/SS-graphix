@@ -1,0 +1,62 @@
+<%= form_with url: enquiry_new_path, method: :post, local: true do |form| %>
+
+  <label>
+    Name
+
+    <%= form.text_field :name,
+      placeholder: "Your name",
+      required: true %>
+  </label>
+
+
+  <label>
+    Email
+
+    <%= form.email_field :email,
+      placeholder: "Email address",
+      required: true %>
+  </label>
+
+
+  <label>
+    Contact Number
+
+    <%= form.telephone_field :contact,
+      placeholder: "Contact Number",
+      required: true %>
+  </label>
+
+
+  <label>
+    Service
+
+    <%= form.select :service,
+      [
+        ["Select a service", ""],
+        ["Translation", "Translation"],
+        ["DTP Services", "DTP Services"],
+        ["Graphic Design", "Graphic Design"],
+        ["Digital Printing", "Digital Printing"],
+        ["Offset Printing", "Offset Printing"]
+      ],
+      {},
+      required: true %>
+  </label>
+
+
+  <label>
+    Requirement
+
+    <%= form.text_area :requirement,
+      rows: 4,
+      placeholder: "Tell us about your requirement..." %>
+  </label>
+
+
+  <button
+    type="submit"
+    class="submit-button">
+    SEND REQUEST
+  </button>
+
+<% end %>

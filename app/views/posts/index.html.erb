@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Professional translation, language and graphic design services."
+  >
+
+  <title>Language & Design Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+   <%= stylesheet_link_tag "index", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "index", "data-turbo-track": "reload", defer: true %>
+</head>
+
+<body>
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+  <div class="header-container">
+
+    <a href="#home" class="brand">
+
+      <div class="brand-logo">
+        <%= image_tag "Logo.jpeg",
+              alt: "S S GRAPHIX",
+              class: "logo-image" %>
+      </div>
+
+      <div class="brand-info">
+        <strong>S S GRAPHIX</strong>
+        <span>LANGUAGE & DESIGN SERVICES</span>
+      </div>
+
+    </a>
+
+
+    <nav class="main-nav" id="mainNav">
+
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#languages">Languages</a>
+      <a href="#industries">Industries</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+
+      <button
+        type="button"
+        class="header-quote"
+        data-open-quote>
+        GET A QUOTE
+      </button>
+
+    </nav>
+
+
+    <button
+      type="button"
+      class="mobile-menu-button"
+      id="mobileMenu"
+      aria-label="Open menu"
+      aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+  <%= image_tag "meeting.png",
+        class: "hero-background",
+        alt: "Professional team working together" %>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-tag">
+      <span></span>
+      ESTABLISHED IN 2011
+    </div>
+
+
+    <h1>
+      Language services
+      <br>
+      <em>that connect people.</em>
+    </h1>
+
+
+    <p class="hero-description">
+      Translation, DTP, graphic design and printing services
+      for businesses, organisations and institutions across
+      regional, national and international markets.
+    </p>
+
+
+    <div class="hero-buttons">
+
+      <a href="#services" class="primary-button">
+        EXPLORE SERVICES
+      </a>
+
+      <button
+        type="button"
+        class="secondary-button"
+        data-open-quote>
+        REQUEST A QUOTE
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-services">
+
+    <div>TRANSLATION</div>
+    <div>DTP SERVICES</div>
+    <div>GRAPHIC DESIGN</div>
+    <div>PRINTING</div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats">
+
+  <div class="container stats-grid">
+
+    <div class="stat-item">
+
+      <div>
+        <strong class="counter"
+                data-target="5.5"
+                data-decimal="true">
+          0
+        </strong>
+        <sup>M+</sup>
+      </div>
+
+      <span>WORDS TRANSLATED</span>
+
+    </div>
+
+
+    <div class="stat-item">
+
+      <div>
+        <strong class="counter"
+                data-target="2000">
+          0
+        </strong>
+        <sup>+</sup>
+      </div>
+
+      <span>PROJECTS COMPLETED</span>
+
+    </div>
+
+
+    <div class="stat-item">
+
+      <div>
+        <strong class="counter"
+                data-target="15">
+          0
+        </strong>
+        <sup>+</sup>
+      </div>
+
+      <span>YEARS OF EXPERIENCE</span>
+
+    </div>
+
+
+    <div class="stat-item">
+
+      <div>
+        <strong>2011</strong>
+      </div>
+
+      <span>ESTABLISHED</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about section" id="about">
+
+  <div class="container about-grid">
+
+    <div class="section-number">
+      <span>01</span>
+      <p>ABOUT US</p>
+    </div>
+
+
+    <div class="about-content">
+
+      <h2>
+        Language, design and
+        <em>communication.</em>
+      </h2>
+
+
+      <div class="about-text">
+
+        <p>
+          S S GRAPHIX is a professional Translation, DTP,
+          Digital Printing and Offset Printing service provider
+          established in March 2011.
+        </p>
+
+        <p>
+          We began with a team of professionally experienced
+          translators with an aim to provide reliable,
+          accurate and quality language services.
+        </p>
+
+      </div>
+
+
+      <div class="about-highlight">
+
+        <span></span>
+
+        <p>
+          From translation to final printed material,
+          we help organisations communicate clearly
+          with their audiences.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="services section" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-number">
+        <span>02</span>
+        <p>OUR SERVICES</p>
+      </div>
+
+      <div>
+        <h2>
+          What we
+          <em>do.</em>
+        </h2>
+
+        <p>
+          Professional services covering language,
+          design and print communication.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="services-list">
+
+
+      <!-- SERVICE 01 -->
+
+      <article class="service">
+
+        <div class="service-number">
+          i
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-top">
+
+            <h3>Translation</h3>
+
+            <span class="service-label">
+              LANGUAGE
+            </span>
+
+          </div>
+
+          <p class="service-intro">
+            Professional translation services for
+            regional, national, international and
+            specialised language requirements.
+          </p>
+
+          <div class="service-tags">
+            <span>Regional</span>
+            <span>National</span>
+            <span>International</span>
+            <span>Dialects</span>
+            <span>Localisation</span>
+          </div>
+
+        </div>
+
+        <div class="service-arrow">
+          ↗
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 02 -->
+
+      <article class="service">
+
+        <div class="service-number">
+          ii
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-top">
+
+            <h3>DTP Services</h3>
+
+            <span class="service-label">
+              PUBLISHING
+            </span>
+
+          </div>
+
+          <p class="service-intro">
+            Multilingual desktop publishing,
+            typesetting, formatting and document
+            composition.
+          </p>
+
+          <div class="service-tags">
+            <span>Typesetting</span>
+            <span>Formatting</span>
+            <span>Multilingual DTP</span>
+            <span>Page Layout</span>
+            <span>Document Composition</span>
+          </div>
+
+        </div>
+
+        <div class="service-arrow">
+          ↗
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 03 -->
+
+      <article class="service">
+
+        <div class="service-number">
+          iii
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-top">
+
+            <h3>Graphic Design</h3>
+
+            <span class="service-label">
+              CREATIVE
+            </span>
+
+          </div>
+
+          <p class="service-intro">
+            Creative design for brochures, leaflets,
+            posters, banners, folders, logos and
+            business communication material.
+          </p>
+
+          <div class="service-tags">
+            <span>Logo Design</span>
+            <span>Leaflets</span>
+            <span>Brochures</span>
+            <span>Posters</span>
+            <span>Banners</span>
+            <span>Folders</span>
+            <span>Corporate Design</span>
+          </div>
+
+        </div>
+
+        <div class="service-arrow">
+          ↗
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 04 -->
+
+      <article class="service">
+
+        <div class="service-number">
+          iv
+        </div>
+
+        <div class="service-content">
+
+          <div class="service-top">
+
+            <h3>Digital & Offset Printing</h3>
+
+            <span class="service-label">
+              PRINT
+            </span>
+
+          </div>
+
+          <p class="service-intro">
+            Reliable printing solutions for corporate,
+            marketing and communication material.
+          </p>
+
+          <div class="service-tags">
+            <span>Digital Printing</span>
+            <span>Offset Printing</span>
+            <span>Brochures</span>
+            <span>Leaflets</span>
+            <span>Stationery</span>
+            <span>Marketing Material</span>
+          </div>
+
+        </div>
+
+        <div class="service-arrow">
+          ↗
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LANGUAGES
+========================================================= -->
+
+<section class="languages section" id="languages">
+
+  <div class="container">
+
+        <div class="section-heading">
+
+        <div class="section-number light">
+            <span>03</span>
+            <p>LANGUAGE COVERAGE</p>
+        </div>
+
+        <div>
+
+            <h2>
+            Languages for
+            <em>every audience.</em>
+            </h2>
+
+            <p>
+            Our language services cover different regions,
+            audiences and communication requirements.
+            </p>
+
+        </div>
+
+        </div>
+
+
+        <div class="language-grid">
+
+    <!-- NATIONAL -->
+    <article class="language-card">
+
+        <span class="card-number">01</span>
+
+        <h3>National Languages</h3>
+
+        <p>
+        Translation and localisation for communication
+        across the Indian market.
+        </p>
+
+        <div class="language-list">
+        <span>Hindi</span>
+        <span>Bengali</span>
+        <span>Marathi</span>
+        <span>Tamil</span>
+        <span>Telugu</span>
+        <span>Gujarati</span>
+        <span>Punjabi</span>
+        <span>Malayalam</span>
+        <span>Kannada</span>
+        <span>Odia</span>
+        <span>Assamese</span>
+        <span>Urdu</span>
+        <span>Punjabi</span>
+        <span>Manipuri</span>
+        <span>Konkani</span>
+        <span>Nepali</span>
+        <span>Sanskrit</span>
+        <span>Maithili</span>
+        </div>
+
+        <div class="language-more">
+        + 20 more languages
+        </div>
+
+    </article>
+
+
+    <!-- INTERNATIONAL -->
+    <article class="language-card">
+
+        <span class="card-number">02</span>
+
+        <h3>International Languages</h3>
+
+        <p>
+        Foreign-language support for organisations
+        communicating with international audiences.
+        </p>
+
+        <div class="language-list">
+        <span>English</span>
+        <span>French</span>
+        <span>German</span>
+        <span>Spanish</span>
+        <span>Portuguese</span>
+        <span>Italian</span>
+        <span>Arabic</span>
+        <span>Chinese</span>
+        <span>Japanese</span>
+        <span>Korean</span>
+        <span>Russian</span>
+        <span>Dutch</span>
+        <span>Turkish</span>
+        <span>Polish</span>
+        <span>Greek</span>
+        <span>Hebrew</span>
+        <span>Thai</span>
+        <span>Vietnamese</span>
+        </div>
+
+        <div class="language-more">
+        + 30 more languages
+        </div>
+
+    </article>
+
+
+    <!-- DIALECTS -->
+    <article class="language-card">
+
+        <span class="card-number">03</span>
+
+        <h3>Dialects & Localisation</h3>
+
+        <p>
+        Regional dialects and localised language
+        requirements based on project specifications.
+        </p>
+
+        <div class="language-list">
+        <span>Garhwali</span>
+        <span>Kumaoni</span>
+        <span>Haryanvi</span>
+        <span>Bhojpuri</span>
+        <span>Awadhi</span>
+        <span>Rajasthani</span>
+        <span>Magahi</span>
+        <span>Chhattisgarhi</span>
+        <span>Marwari</span>
+        <span>Braj</span>
+        <span>Bundeli</span>
+        <span>Bagheli</span>
+        <span>Dogri</span>
+        <span>Gondi</span>
+        <span>Santhali</span>
+        <span>Bhili</span>
+        <span>Meitei</span>
+        <span>Mewari</span>
+        </div>
+
+        <div class="language-more">
+        + Regional dialects on request
+        </div>
+
+    </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INDUSTRIES
+========================================================= -->
+
+<section class="industries section" id="industries">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-number">
+        <span>04</span>
+        <p>INDUSTRIES</p>
+      </div>
+
+      <div>
+
+        <h2>
+          Serving different
+          <em>industries.</em>
+        </h2>
+
+        <p>
+          Our services are adapted to the communication
+          requirements of different sectors.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="industry-grid">
+
+
+      <article>
+
+        <span>01</span>
+
+        <h3>
+          Government & Public Sector
+        </h3>
+
+        <p>
+          Translation, DTP, design and printing
+          for government communication.
+        </p>
+
+        <small>
+          DAVP · AIIMS
+        </small>
+
+      </article>
+
+
+      <article>
+
+        <span>02</span>
+
+        <h3>
+          Corporate
+        </h3>
+
+        <p>
+          Language and communication support
+          for corporate requirements.
+        </p>
+
+        <small>
+          INDIA YAMAHA MOTOR · SUMITOMO CHEMICAL
+        </small>
+
+      </article>
+
+
+      <article>
+
+        <span>03</span>
+
+        <h3>
+          Agribusiness
+        </h3>
+
+        <p>
+          Multilingual communication for
+          agricultural and chemical organisations.
+        </p>
+
+        <small>
+          CRYSTAL CROP · MOSAIC INDIA · JAI CHEMICAL · PARIJAT
+        </small>
+
+      </article>
+
+
+      <article>
+
+        <span>04</span>
+
+        <h3>
+          Advertising
+        </h3>
+
+        <p>
+          Creative design, multilingual content
+          and printing for agencies.
+        </p>
+
+        <small>
+          SANKRAFT GLOBAL · CRAYONS ADVERTISING
+        </small>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CLIENTS
+========================================================= -->
+
+<section class="clients section" id="clients">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-number">
+        <span>05</span>
+        <p>OUR CLIENTS</p>
+      </div>
+
+      <div>
+        <h2>
+          Trusted by
+          <em>organisations.</em>
+        </h2>
+
+        <p>
+          Working with organisations across government,
+          corporate, agribusiness and advertising sectors.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <%
+  clients = [
+    ["davp.png", "DAVP"],
+    ["aiims.png", "AIIMS"],
+    ["yamaha.png", "INDIA YAMAHA MOTOR"],
+    ["sumitomo.png", "SUMITOMO CHEMICAL"],
+    ["crystal.png", "CRYSTAL CROP"],
+    ["mosaic.png", "MOSAIC INDIA"],
+    ["jay_chemical.png", "JAI CHEMICAL"],
+    ["parijat.png", "PARIJAT"],
+    ["sankraft.png", "SANKRAFT GLOBAL"],
+    ["crayon.png", "CRAYONS ADVERTISING"]
+  ]
+%>
+
+<div class="client-marquee">
+  <div class="client-track">
+
+    <% 2.times do %>
+      <% clients.each do |image, name| %>
+
+        <div class="client-item">
+
+          <div class="client-logo">
+            <%= image_tag image, alt: name %>
+          </div>
+
+          <span><%= name %></span>
+
+        </div>
+
+      <% end %>
+    <% end %>
+
+  </div>
+</div>
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+  <div class="container cta-inner">
+
+    <div>
+
+      <span>
+        HAVE A PROJECT IN MIND?
+      </span>
+
+      <h2>
+        Let's discuss your requirement.
+      </h2>
+
+    </div>
+
+    <button
+      type="button"
+      class="cta-button"
+      data-open-quote>
+      REQUEST A QUOTE
+    </button>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact section" id="contact">
+
+  <div class="container contact-grid">
+
+    <div>
+
+      <div class="section-number">
+
+        <span>06</span>
+        <p>CONTACT</p>
+
+      </div>
+
+
+      <h2>
+        Let's talk about
+        <em>your project.</em>
+      </h2>
+
+
+      <p class="contact-description">
+
+        Tell us what you need and our team can
+        help you choose the right service.
+
+      </p>
+
+
+      <div class="contact-details">
+
+        <div>
+          <small>EMAIL</small>
+          <strong>info.ssgraphix@gmail.com</strong>
+        </div>
+
+        <div>
+          <small>PHONE</small>
+          <strong>+91 9990627245</strong>
+        </div>
+
+        <div>
+          <small>LOCATION</small>
+          <strong>A-25,  2nd Floor, Okhla Industrial Area, Phase-I, New Delhi-110020</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="contact-form">
+
+      <h3>
+        Send an enquiry
+      </h3>
+      <%= render('form')%>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-top">
+
+    <div class="footer-brand">
+
+      <div class="footer-logo">
+
+        <%= image_tag "Logo.jpeg",
+              alt: "S S GRAPHIX" %>
+
+      </div>
+
+      <div>
+
+        <strong>S S GRAPHIX</strong>
+
+        <span>
+          Translation · DTP · Design · Printing
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#languages">Languages</a>
+      <a href="#industries">Industries</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © <%= Time.current.year %> S S GRAPHIX
+    </span>
+
+    <span>
+      Established 2011
+    </span>
+
+  </div>
+
+  <!-- =========================================================
+     FLOATING QUOTE BUTTON
+========================================================= -->
+
+<button
+  type="button"
+  class="floating-quote"
+  data-open-quote>
+
+  <span>✉</span>
+
+  <strong>
+    REQUEST A QUOTE
+  </strong>
+
+</button>
+</footer>
+
+
+<!-- =========================================================
+     QUOTE MODAL
+========================================================= -->
+
+<div
+  class="quote-modal"
+  id="quoteModal"
+  aria-hidden="true">
+
+  <div
+    class="quote-overlay"
+    data-close-quote>
+  </div>
+
+
+  <div
+    class="quote-box"
+    role="dialog"
+    aria-modal="true">
+
+    <button
+      type="button"
+      class="quote-close"
+      data-close-quote>
+      ×
+    </button>
+
+
+    <span class="modal-label">
+      REQUEST A QUOTE
+    </span>
+
+
+    <h2>
+      Tell us about
+      <em>your requirement.</em>
+    </h2>
+
+    <%= render('form')%>
+</body>
+</html>
