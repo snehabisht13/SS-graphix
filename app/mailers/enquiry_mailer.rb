@@ -9,8 +9,8 @@ class EnquiryMailer < ApplicationMailer
     @requirement = params[:requirement]
 
     mail(
-      to: ENV["SMTP_USERNAME"],
-      from: ENV["SMTP_USERNAME"],
+      to: ENV.fetch("BREVO_SENDER_EMAIL"),
+      from: ENV.fetch("BREVO_SENDER_EMAIL"),
       reply_to: @email,
       subject: "New Enquiry from #{@name}"
     )
@@ -25,7 +25,7 @@ class EnquiryMailer < ApplicationMailer
 
     mail(
       to: @email,
-      from: ENV["SMTP_USERNAME"],
+      from: ENV.fetch("BREVO_SENDER_EMAIL")
       subject: "Thank You #{params[:name]}"
     )
 
