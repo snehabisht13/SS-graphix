@@ -25,7 +25,7 @@ class EnquiryMailer < ApplicationMailer
 
     mail(
       to: @email,
-      from: ENV.fetch("BREVO_SENDER_EMAIL")
+      from: ENV.fetch("BREVO_SENDER_EMAIL"),
       subject: "Thank You #{params[:name]}"
     )
 
