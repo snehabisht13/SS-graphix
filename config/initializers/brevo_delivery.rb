@@ -2,7 +2,7 @@ require "net/http"
 require "json"
 
 class BrevoDelivery
-  def initialize(**_options); end
+  def initialize(*args, **options); end
 
   def deliver!(mail)
     uri = URI("https://api.brevo.com/v3/smtp/email")
